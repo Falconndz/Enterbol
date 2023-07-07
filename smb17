@@ -1,3 +1,7 @@
 sc config lanmanworkstation depend= bowser/mrxsmb10/nsi
 
 netsh advfirewall firewall add rule name="Open Port 445" dir=in action=allow protocol=TCP localport=445
+
+
+by
+netsh advfirewall firewall delete rule name="Open Port 445" protocol=TCP localport=445
